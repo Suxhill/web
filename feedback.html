@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Sushil's Coffee House</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <div class="feedback-container">
+
+        <!-- LEFT SIDE -->
+        <div class="feedback-form">
+
+            <div class="logo">
+                <img src="images/sushils-logo.png" alt="Sushil's Coffee House">
+            </div>
+
+            <div class="form-content">
+
+                <h1>We Value Your Feedback!</h1>
+                <p class="subtitle">Tell us about your coffee experience.</p>
+
+                <form id="feedbackForm">
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="rating">Rate Your Experience</label>
+                    <select id="rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                        <option value="4">⭐⭐⭐⭐ Very Good</option>
+                        <option value="3">⭐⭐⭐ Good</option>
+                        <option value="2">⭐⭐ Fair</option>
+                        <option value="1">⭐ Poor</option>
+                    </select>
+
+                    <label for="message">Your Feedback</label>
+                    <textarea id="message" placeholder="Write your feedback here..." required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+
+                    <p id="feedbackResult"></p>
+
+                </form>
+
+                <div class="back-link">
+                    <a href="index.html">← Return to Coffee House</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="feedback-image">
+
+            <div class="image-text">
+                <h2>Your Opinion Matters!</h2>
+                <p>Good coffee becomes better with your feedback.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
